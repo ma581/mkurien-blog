@@ -2,6 +2,7 @@ import { Container, Navbar, Nav } from 'react-bootstrap';
 
 export function NavBar(props){
 return (
+
   <Navbar bg="primary" variant="dark">
     <Container>
     <Navbar.Brand href="home">MK</Navbar.Brand>
