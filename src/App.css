@@ -47,10 +47,7 @@
     transform: rotate(360deg);
   }
 }
-
-p, li {
-  text-align: justify;
-}
+ 
 
 img {
   justify-content: center;
