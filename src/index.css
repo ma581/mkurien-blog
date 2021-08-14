@@ -26,6 +26,12 @@ a.card-link {
   text-decoration: none;
 }
 
+a.p-link {
+  background-color: #b8e994;
+  color: #000000;
+  text-decoration: none;
+}
+
 a:hover {
   background-color: #b8e994;
   text-decoration: underline;
@@ -33,4 +39,8 @@ a:hover {
 
 .card-title {
   font-size: large;
+}
+
+.light {
+  color: grey;
 }

@@ -5,6 +5,7 @@ import { LearningSpanish } from "./articles/LearningSpanish";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Container, Row, Col, Image, Card } from "react-bootstrap";
+import { SpanishSlang } from "./articles/SpanishSlang";
 
 function App() {
   return (
@@ -13,8 +14,11 @@ function App() {
       <Router className="body">
         <div>
           <Switch>
-            <Route path="/articles">
-              <Articles />
+            <Route path="/spanishslang">
+              <SpanishSlang />
+            </Route>
+            <Route path="/learningspanish">
+              <LearningSpanish />
             </Route>
             <Route path="/contact">
               <Contact />
@@ -45,7 +49,7 @@ function Home() {
           <Card style={{ width: "18rem" }}>
             <Card.Body>
               <Card.Title>
-                <a href="/articles" className="card-link">
+                <a href="/learningspanish" className="card-link">
                   Learning Spanish in my free time
                 </a>
               </Card.Title>
@@ -60,6 +64,21 @@ function Home() {
               <Card.Link href="https://www.amazon.co.uk/Nudge-Improving-Decisions-Health-Happiness/dp/0141040017/ref=sr_1_1?dchild=1&keywords=nudge&qid=1628957465&sr=8-1">
                 📚 Nudge
               </Card.Link>
+            </Card.Body>
+          </Card>
+          <br />
+          <Card style={{ width: "18rem" }}>
+            <Card.Body>
+              <Card.Title>
+                <a href="/spanishslang" className="card-link">
+                  Sound like a native
+                </a>
+              </Card.Title>
+              <Card.Subtitle>Spanish Slang</Card.Subtitle>
+              <Card.Text>
+                Here are some phrases, slang and <b>mild insults</b> you'd only
+                find out if you spent time with native speakers.
+              </Card.Text>
             </Card.Body>
           </Card>
           <br />
