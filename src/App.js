@@ -40,19 +40,29 @@ function Home() {
             I love learning and tech and here I share some of my interests.
             Mostly, it's just me having fun tinkering with tech 😉.
           </p>
+          <br />
           <h2>Latest posts</h2>
-          <a href="/articles" className="card-link">
-            <Card style={{ width: "18rem" }}>
-              <Card.Body>
-                <Card.Title>Learning Spanish in my free time</Card.Title>
-                <Card.Text>
-                  Learn how I automated learning and some slang used everday to
-                  make you sound like a native and understand daily
-                  conversation.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </a>
+          <Card style={{ width: "18rem" }}>
+            <Card.Body>
+              <Card.Title>
+                <a href="/articles" className="card-link">
+                  Learning Spanish in my free time
+                </a>
+              </Card.Title>
+              <Card.Text>
+                I made learning as easy and automated as possible - by building
+                a habit and using defaults.
+              </Card.Text>
+              <Card.Link href="https://www.amazon.co.uk/Power-Habit-Why-What-Change-ebook/dp/B006WAIV6M/ref=sr_1_1?dchild=1&keywords=the+power+of+habit&qid=1628957501&sr=8-1">
+                📚 The Power of Habit
+              </Card.Link>
+              <br></br>
+              <Card.Link href="https://www.amazon.co.uk/Nudge-Improving-Decisions-Health-Happiness/dp/0141040017/ref=sr_1_1?dchild=1&keywords=nudge&qid=1628957465&sr=8-1">
+                📚 Nudge
+              </Card.Link>
+            </Card.Body>
+          </Card>
+          <br />
           <br />
           <h2>Coming Soon</h2>
           <Card style={{ width: "18rem" }}>
@@ -77,6 +87,7 @@ function Home() {
               <Card.Text>Rene's tips on how he learnt French.</Card.Text>
             </Card.Body>
           </Card>
+          <br />
           <br />
           <h2>Interesting links</h2>
           <p className="">
