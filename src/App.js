@@ -1,10 +1,14 @@
 import "./App.css";
 import { NavBar } from "./Navbar";
 import { Content } from "./Content";
-import { LearningSpanish } from "./articles/LearningSpanish";
+import {
+  LearningSpanish,
+  HABIT_BOOK_LINK,
+  NUDGE_BOOK_LINK,
+} from "./articles/LearningSpanish";
 
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { Container, Row, Col, Image, Card } from "react-bootstrap";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import { SpanishSlang } from "./articles/SpanishSlang";
 
 function App() {
@@ -57,13 +61,11 @@ function Home() {
                 I made learning as easy and automated as possible - by building
                 a habit and using defaults.
               </Card.Text>
-              <Card.Link href="https://www.amazon.co.uk/Power-Habit-Why-What-Change-ebook/dp/B006WAIV6M/ref=sr_1_1?dchild=1&keywords=the+power+of+habit&qid=1628957501&sr=8-1">
-                📚 The Power of Habit
-              </Card.Link>
+              <a href={HABIT_BOOK_LINK}>📚 The Power of Habit</a>
               <br></br>
-              <Card.Link href="https://www.amazon.co.uk/Nudge-Improving-Decisions-Health-Happiness/dp/0141040017/ref=sr_1_1?dchild=1&keywords=nudge&qid=1628957465&sr=8-1">
-                📚 Nudge
-              </Card.Link>
+              <a href={NUDGE_BOOK_LINK}>📚 Nudge</a>
+              <br></br>
+              <a href="https://www.memrise.com/">📱 Memrise</a>
             </Card.Body>
           </Card>
           <br />
@@ -76,8 +78,8 @@ function Home() {
               </Card.Title>
               <Card.Subtitle>Spanish Slang</Card.Subtitle>
               <Card.Text>
-                Here are some phrases, slang and <b>mild insults</b> you'd only
-                find out if you spent time with native speakers.
+                Here are some phrases, slang and mild insults you'd only learn
+                if you spend time with native speakers.
               </Card.Text>
             </Card.Body>
           </Card>

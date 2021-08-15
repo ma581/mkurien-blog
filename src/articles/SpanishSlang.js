@@ -8,7 +8,7 @@ export function SpanishSlang() {
         <p>
           You just don't come across slang or phrases unless you've spent a
           significant amount of time with native speakers. So here are some
-          phrases I learnt while spending time with my partners family! Hope
+          phrases I learnt while spending time with my partner's family! Hope
           this helps you on your Spanish-learning journey!
         </p>
         <Alert variant="secondary">
@@ -26,68 +26,74 @@ export function SpanishSlang() {
             <a href="#insults">Mild insults</a>
           </li>
           <li>
+            <a href="#sayings">Fun sayings</a>
+          </li>
+          <li>
             <a href="#bonus">Bonus phrases</a>
           </li>
         </ol>
         <h2 id="slang">Common slang and phrases</h2>
 
-        <p>
-          To help you sound like a native, here are some popular slang/phrases
-          that you wouldn't find in a text book.
-        </p>
+        <p>Here are some of the most popular slang/phrases.</p>
 
         <p>
-          <b>Que chulo/commo mola! (how cool)</b> = Cool! You hear this{" "}
+          <b>🆒 Que chulo/commo mola/guay (how cool)</b> = Cool! You hear this{" "}
           <i>all the time</i> in conversation <i>Que chulo!</i>
         </p>
 
         <p>
-          <b>Tio/Tia! (dude)</b> Just like you would use <i>dude</i> in English.{" "}
+          <b>🕶️ Tio/Tia (uncle/aunt)</b> Just like you would use <i>dude</i> in
+          English.{" "}
         </p>
 
         <p>
-          <b>Que morro (how cheeky)</b> = Cool! eg when you hear about this
-          blog, one might exclaim <i>Que chulo!</i>
+          <b>😜 Que morro (how cheeky)</b> = eg when someone ...
         </p>
 
         <p>
-          <b>Quinto culo (fifth buttock)</b> = In the middle of nowhere/far
+          <b>🍑 Quinto culo (fifth buttock)</b> = In the middle of nowhere/far
           away. eg When you explain where your Spanish partner's family live{" "}
-          <i>"Esta en el quinto culo"</i> .
+          <i>Esta en el quinto culo</i>.
         </p>
 
         <p>
           <b>🥚 Pisando huevos (stepping on eggs/balls)</b> = Going extremely
           slowly. Eg the car in front of you is going at a snails pace, you
-          might retort <i>"Este coche esta pisando huevos".</i>
+          might retort <i>Este coche esta pisando huevos.</i>
         </p>
 
         <p>
-          <b>🥛 Cagando leche (sh**ting milk)</b> = Going very fast. Eg{" "}
+          <b>🥛 Cagando leche (crapping milk)</b> = Going very fast. Eg{" "}
           <i>Este coche esta cagando leche.</i>{" "}
         </p>
 
         <p>
-          <b>👊🏼 Da una leche/lata (give a milk/tin)</b> = Hit something/someone.
+          <b>👊🏼 Da una leche (give a milk)</b> = Hit something/someone.
         </p>
 
         <p>
-          <b>Del ano de la catapun (From the year of the catapun?)</b> = Aaages
+          <b>👵 En el año catapún (From the year of the catapún?)</b> = Aaages
           ago. Eg whenever Abuela teaches me a (ancient, unused) phrase, my
           partner usually snorts and says{" "}
-          <i>"No apprendas eso, es de la ano de la catapun".</i>{" "}
+          <i>"No apprendes eso, es del año catapún".</i>{" "}
         </p>
 
         <p>
-          <b>Perdiendo la oya (losing the pot)</b> = You are losing the plot/
-          you are getting confused.
+          <b>🤪 Perdiendo la olla (losing the pot)</b> = You are losing the
+          plot/ you are getting confused.
+        </p>
+
+        <p>
+          <b>🐐 Como una cabra (like a goat)</b> = Someone was "being nuts".
+          Similarly, <i>Cabrearse</i> (to become a goat) means to get
+          upset/pissed off.
         </p>
 
         <h2 id="insults">Mild insults</h2>
         <p>
           You can easily find or Google Translate your choice of insults, but it
           shows extra class if you can use the milder ones. Here's a choice
-          selection.{" "}
+          platter of mild insults.{" "}
         </p>
         <p>
           <b>Que le den morcillas (give them morcilla)</b> = Got **** yourself.
@@ -96,21 +102,21 @@ export function SpanishSlang() {
           <b>Panoli</b> = Idiot.{" "}
         </p>
         <p>
-          <b>Golfo</b> = Explanation.{" "}
+          <b>Golfo</b> = Shameless.{" "}
         </p>
         <p>
           <b>Pringi/Pringado</b> = Idiot.{" "}
         </p>
         <p>
-          <b>💩 Me cago en el mar (I'm crapping in the sea) </b> = An expression
+          <b>Me cago en el mar (I'm crapping in the sea) </b> = An expression
           equivalent of saying <i>s**t!</i>. Often shortened to just{" "}
-          <i>Cago en ...</i>{" "}
+          <i>Cago en.</i>{" "}
         </p>
         <p>
-          <b>Maldita Sea</b> = Explanation.{" "}
+          <b>Maldita Sea</b> = Darn it.{" "}
         </p>
 
-        <h2>Fun sayings</h2>
+        <h2 id="sayings">Fun sayings</h2>
         <p>
           These are sayings I learnt from my partner's family (Extra points if
           you can guess which ones are from La Abuela/grandma).{" "}
@@ -142,9 +148,9 @@ export function SpanishSlang() {
         <h2 id="bonus">Bonus phrases</h2>
         <p>Extra phrases if you're craving for more juicy titbits.</p>
         <p>
-          <b>Estas commo un tren</b> = You're hot (literally means you're like a
-          train). Eg When I met La Abuela for the first time, my partner thought
-          this was a great line to tell her
+          <b>Estas commo un tren (you're like a train) </b> = You're hot. Eg
+          When I met La Abuela for the first time, my partner thought this was a
+          great line to tell her.
         </p>
         <p>
           <b>🌈 Estoy flipando en colores (I'm flipping in colours)</b> =
@@ -158,7 +164,7 @@ export function SpanishSlang() {
           <i>Voy a tirarse del plano a este postre.</i>{" "}
         </p>
         <p>
-          <b>Ponerse de mosca (to become a fly)</b> = Get enraged.{" "}
+          <b>🪰 Ponerse de mosca (to become a fly)</b> = Get enraged.{" "}
         </p>
 
         <p>
