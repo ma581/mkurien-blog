@@ -1,13 +1,24 @@
 import { Content } from "../Content.js";
-import { Image, Alert } from "react-bootstrap";
+import { Popover, OverlayTrigger, Button, Alert, Card } from "react-bootstrap";
 
+const NUDGE_BOOK_LINK =
+  "https://www.amazon.co.uk/Nudge-Improving-Decisions-Health-Happiness/dp/0141040017/ref=sr_1_1?dchild=1&keywords=nudge&qid=1628957465&sr=8-1";
+const HABIT_BOOK_LINK =
+  "https://www.amazon.com/Power-Habit-What-Life-Business/dp/081298160X";
 export function LearningSpanish() {
   return (
     <>
       <Content heading={"Learning Spanish in my free time"}>
         <Alert variant="secondary">
-          TLDR; I changed the language on my phone to Spanish and I formed a
-          habit of practicing with spaced-repetition for 15mins everyday.
+          TLDR; I changed the default language on my phone to Spanish and I
+          formed a habit of practicing with spaced-repetition for 15mins
+          everyday.
+          <br></br>
+          <a href={HABIT_BOOK_LINK}>📚 The Power of Habit</a>
+          <br></br>
+          <a href={NUDGE_BOOK_LINK}>📚 Nudge</a>
+          <br></br>
+          <a href="https://www.memrise.com/">📱 Memrise</a>
         </Alert>
         {/* <Image
           src={require("../images/tortilla-cropped.jpg").default}
@@ -29,11 +40,10 @@ export function LearningSpanish() {
           </a>
           . Hope this helps you on your language learning journey!
         </p>
-
         <h2 id="hard">Its hard work </h2>
         <p>
-          Learning a new language takes years of practice. Its especially hard
-          to work towards a goal that's years away.
+          Learning a new language takes a long time (years of practice if you
+          wish to be fluent). Working towards a long-term goal is hard.
         </p>
         <p>
           For me, the biggest challenges were:
@@ -59,32 +69,60 @@ export function LearningSpanish() {
         </p>
         <h3>Using defaults</h3>
         <p>
-          <b>I changed my phone's language to Spanish</b> (kudos to Rene). This
-          change meant that I was automatically learning and practicing Spanish,{" "}
-          <b>everytime I used my phone</b>. It might sound like a drastic
-          change, but actually it's pretty easy to use your phone in another
-          language. Most UI's are well designed these days, meaning you can
-          easily guess the meaning of buttons in Apps (eg <i>Buscar aqui</i> on
-          the search bar on Google Maps would be "Search here").
+          <b>I changed my phone's default language to Spanish</b> (kudos to R
+          for this idea). This meant that I was automatically learning and
+          practicing Spanish, <b>everytime I used my phone</b>. In the book
+          <a href={NUDGE_BOOK_LINK} className="p-link">
+            {" "}
+            Nudge
+          </a>
+          , Cass R. Sunstein and Richard H. Thaler (winner of the 2017 Nobel
+          Prize in Economics) explain how <b>defaults</b> are a powerful tool in
+          decision making. Since they do not require any effort by the decision
+          maker, the <i>inaction</i> is an effective <i>nudge</i>. For me, this{" "}
+          <b>
+            removed the inertia to practice Spanish - by default, I was
+            consuming Spanish everyday
+          </b>{" "}
+          (my phone is still in Spanish today).
+        </p>
+        <p>
+          It might sound like a drastic change, but actually it's pretty easy to
+          use your phone in another language. Most UI's are well designed these
+          days, meaning you can easily guess the meaning of buttons in Apps (eg{" "}
+          <i>Buscar aqui</i> on the search bar on Google Maps would be "Search
+          here"). I learnt a lot of useful verbs (send, cancel, delete, receive,
+          find, make etc) just from having seen them on my phone.
         </p>
         <h3>Forming habits</h3>
         <p>
           <b>
             I built a habit of using{" "}
-            <a href="https://www.memrise.com/">Memrise</a> while commuting
-            everyday
+            <a href="https://www.memrise.com/" className="p-link">
+              Memrise
+            </a>{" "}
+            while commuting everyday
           </b>
-          . Back in 2017, I was taking a train to a client's office everyday. By
-          using this time, and forming a simple habit, I got small gains
-          everyday (I highly recommend reading{" "}
-          <a href="https://www.amazon.com/Power-Habit-What-Life-Business/dp/081298160X">
+          . Back in 2017, I was taking a train to a client's office everyday.
+          For the first 15mins after getting on the train, I would play on
+          Memrise.
+          <b> Its easy to prioritize just spending 15 mins </b>
+          (after which I would go back to reading the BBC or scrolling Twitter).
+          And once I made this habit, it was even easier. If you want to learn
+          more about how habits can change people and organisations, I highly
+          recommend reading{" "}
+          <a href={HABIT_BOOK_LINK} className="p-link">
             The Power of Habit
           </a>
-          ). Memrise is a fantastic app. It uses spaced repetition, recordings
-          of native speakers and it taught me phrases used everday in Spanish.
-          Its learning algorithm will test you at the right timings to train
-          your memory effectively. I cannot recommend it enough (its much better
-          than Duolingo).
+          ! The incremental gains of this habit increased my vocab
+          significantly.
+        </p>{" "}
+        <p>
+          <b>Memrise is a fantastic app</b>. It uses <b>spaced repetition</b>,
+          recordings of native speakers and it taught me phrases used everday in
+          Spanish. Its learning algorithm will test you at the right timings to
+          train your memory effectively. I cannot recommend it enough (its much
+          better than Duolingo!).
         </p>
       </Content>
     </>
