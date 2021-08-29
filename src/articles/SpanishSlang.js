@@ -1,15 +1,14 @@
-import { Content } from "../Content.js";
+import { Page, Article } from "../Content.js";
 import { Alert } from "react-bootstrap";
 
-export function SpanishSlang() {
+export function SpanishSlangPage() {
   return (
-    <>
-      <Content heading={"Sound like a native - Spanish slang"}>
+    <Page>
+      <Article heading={"Sound like a native - Spanish slang"}>
         <p>
-          You just don't come across slang or phrases unless you've spent a
-          significant amount of time with native speakers. So here are some
-          phrases I learnt while spending time with my partner's family! Hope
-          this helps you on your Spanish-learning journey!
+          Native speakers use informal words and phrases <i>all the time</i>. So
+          here are some phrases I learnt while spending time with my partner's
+          family! Hope this helps you on your Spanish-learning journey!
         </p>
         <Alert variant="secondary">
           This article is a follow-up of{" "}
@@ -47,7 +46,8 @@ export function SpanishSlang() {
         </p>
 
         <p>
-          <b>😜 Que morro (how cheeky)</b> = eg when someone ...
+          <b>😜 Que morro (how cheeky)</b> = I don't have a good example for
+          this, but apparently I'm quite cheeky.
         </p>
 
         <p>
@@ -96,9 +96,6 @@ export function SpanishSlang() {
           platter of mild insults.{" "}
         </p>
         <p>
-          <b>Que le den morcillas (give them morcilla)</b> = Got **** yourself.
-        </p>
-        <p>
           <b>Panoli</b> = Idiot.{" "}
         </p>
         <p>
@@ -140,9 +137,13 @@ export function SpanishSlang() {
           captain, the sailers don't make orders. When there is a boss/leader,
           the minions don't make the orders.{" "}
         </p>
-
         <p>
-          <b>Spanish</b> = Explanation.{" "}
+          <b>
+            🔨 A dios rogando y con el mazo dando (Praying to God and hitting
+            with the hammer)
+          </b>{" "}
+          = You have to take action yourself, even while you're praying to God
+          for help.{" "}
         </p>
 
         <h2 id="bonus">Bonus phrases</h2>
@@ -166,12 +167,11 @@ export function SpanishSlang() {
         <p>
           <b>🪰 Ponerse de mosca (to become a fly)</b> = Get enraged.{" "}
         </p>
-
         <p>
-          <b>No comerse un colin (not eating a colin)</b> = Unsuccessfull in
-          getting with someone.
+          <b>Si eres guapo, y eres rico, que mas quieres Frederico!</b> = If
+          you're handsome and you're rich, what more do you need Frederico!?{" "}
         </p>
-      </Content>
-    </>
+      </Article>
+    </Page>
   );
 }

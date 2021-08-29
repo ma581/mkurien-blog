@@ -1,4 +1,4 @@
-import { Content } from "../Content.js";
+import { Page, Article } from "../Content.js";
 import { Popover, OverlayTrigger, Button, Alert, Card } from "react-bootstrap";
 
 export const NUDGE_BOOK_LINK =
@@ -6,10 +6,10 @@ export const NUDGE_BOOK_LINK =
 export const HABIT_BOOK_LINK =
   "https://www.amazon.com/Power-Habit-What-Life-Business/dp/081298160X";
 
-export function LearningSpanish() {
+export function LearningSpanishPage() {
   return (
-    <>
-      <Content heading={"Learning Spanish in my free time"}>
+    <Page>
+      <Article heading={"Learning Spanish in my free time"}>
         <Alert variant="secondary">
           TLDR; I changed the default language on my phone to Spanish and I
           formed a habit of practicing with spaced-repetition for 15mins
@@ -38,23 +38,20 @@ export function LearningSpanish() {
           Learning a new language takes a long time (years of practice if you
           wish to be fluent). Working towards a long-term goal is hard.
         </p>
-        <p>
-          For me, the biggest challenges were:
-          <ol>
-            <li>
-              <b>Prioritizing time regularly to learn.</b> Like everybody else,
-              I'm busy with various things everyday. There's always something
-              else to do.
-            </li>
-            <li>
-              {" "}
-              <b>The activation energy to actually do it.</b> Its just easier to
-              just watch some Netflix. After a day of work, I just want to
-              chill.{" "}
-            </li>
-          </ol>
-          <h2 id="easier"> How I made it easier </h2>
-        </p>
+        <p>For me, the biggest challenges were:</p>
+        <ol>
+          <li>
+            <b>Prioritizing time regularly to learn.</b> Like everybody else,
+            I'm busy with various things everyday. There's always something else
+            to do.
+          </li>
+          <li>
+            {" "}
+            <b>The activation energy to actually do it.</b> Its just easier to
+            just watch some Netflix. After a day of work, I just want to chill.{" "}
+          </li>
+        </ol>
+        <h2 id="easier"> How I made it easier </h2>
         <p>
           I made learning as automated and easy as possible. These baby steps
           improved my Spanish so that I was comfortable with causal conversation
@@ -117,7 +114,7 @@ export function LearningSpanish() {
           train your memory effectively. I cannot recommend it enough (its much
           better than Duolingo!).
         </p>
-      </Content>
-    </>
+      </Article>
+    </Page>
   );
 }

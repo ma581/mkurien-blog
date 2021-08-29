@@ -1,20 +1,42 @@
 import { Container, Row, Col } from "react-bootstrap";
+import Feedback from "./components/Feedback";
+import { Footer } from "./components/Footer";
 
-export function Content(props) {
+export function Page(props) {
   return (
     <>
       <Container>
         <Row>
-          <Col xs={1}></Col>
-          <Col xs={10}>
-            <h1>{props.heading}</h1>
-            <h5 className="light">{props.date ? props.date : today()}</h5>
-            <br />
-            <div>{props.children}</div>
-          </Col>
-          <Col xs={1}></Col>
+          <br></br>
+          <br></br>
+        </Row>
+        <Col>
+          <div>{props.children}</div>
+        </Col>
+        <Row>
+          <br></br>
+          <br></br>
         </Row>
       </Container>
+    </>
+  );
+}
+
+export function Article(props) {
+  return (
+    <>
+      <Row>
+        <h1>{props.heading}</h1>
+        <h5 className="light">{props.date ? props.date : today()}</h5>
+        <br />
+        <div>{props.children}</div>
+      </Row>
+      <Row>
+        <Feedback />
+      </Row>
+      <Row>
+        <Footer title={props.heading} />
+      </Row>
     </>
   );
 }

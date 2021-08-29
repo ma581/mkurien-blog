@@ -1,11 +1,11 @@
 import "./App.css";
 import { NavBar } from "./Navbar";
-import { Content } from "./Content";
-import { LearningSpanish } from "./articles/LearningSpanish";
+import { Page } from "./Content";
+import { LearningSpanishPage } from "./articles/LearningSpanish";
 import { Home } from "./homepage/Home";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { SpanishSlang } from "./articles/SpanishSlang";
+import { SpanishSlangPage } from "./articles/SpanishSlang";
 
 function App() {
   return (
@@ -15,13 +15,13 @@ function App() {
         <div>
           <Switch>
             <Route path="/spanishslang">
-              <SpanishSlang />
+              <SpanishSlangPage />
             </Route>
             <Route path="/learningspanish">
-              <LearningSpanish />
+              <LearningSpanishPage />
             </Route>
-            <Route path="/contact">
-              <Contact />
+            <Route path="/about">
+              <About />
             </Route>
             <Route path="/">
               <Home />
@@ -33,11 +33,20 @@ function App() {
   );
 }
 
-function Contact() {
+function About() {
   return (
-    <Content heading="Contact">
-      <a href="https://twitter.com/mshokk">🐦 Tweet me</a>
-    </Content>
+    <Page heading="About">
+      <p>Hi, I'm Manoj.</p>
+      <p>
+        This blog takes a lot of inspiration from{" "}
+        <a href="https://brianlovin.com/">brianlovin.com</a>. You can checkout
+        all my code on my <a href="https://github.com/ma581">Github</a>.
+      </p>
+      <p>
+        🐦 You can also follow me on{" "}
+        <a href="https://twitter.com/mshokk">Twitter</a>.
+      </p>
+    </Page>
   );
 }
 
