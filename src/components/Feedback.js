@@ -104,7 +104,7 @@ export default function Feedback(props) {
         </div>
         {serverState.submitted &&
           (serverState.error ? (
-            <Alert variant="danger"> Oh no!</Alert>
+            <Alert variant="danger"> Oh no! That did not work :( </Alert>
           ) : (
             <Alert>Thanks for taking the time to leave a note!</Alert>
           ))}

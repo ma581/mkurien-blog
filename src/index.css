@@ -14,33 +14,3 @@ code {
 html {
   scroll-behavior: smooth;
 }
-
-.header {
-  font-weight: bolder;
-  font-size: 300%;
-  /* font-size:xx-large; */
-}
-
-a.card-link {
-  color: #000000;
-  text-decoration: none;
-}
-
-a.p-link {
-  background-color: #b8e994;
-  color: #000000;
-  text-decoration: none;
-}
-
-a:hover {
-  background-color: #b8e994;
-  text-decoration: underline;
-}
-
-.card-title {
-  font-size: large;
-}
-
-.light {
-  color: grey;
-}
