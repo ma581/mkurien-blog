@@ -5,6 +5,7 @@ export const NUDGE_BOOK_LINK =
   "https://www.amazon.co.uk/Nudge-Improving-Decisions-Health-Happiness/dp/0141040017/ref=sr_1_1?dchild=1&keywords=nudge&qid=1628957465&sr=8-1";
 export const HABIT_BOOK_LINK =
   "https://www.amazon.com/Power-Habit-What-Life-Business/dp/081298160X";
+
 export function LearningSpanish() {
   return (
     <>
@@ -20,14 +21,6 @@ export function LearningSpanish() {
           <br></br>
           <a href="https://www.memrise.com/">📱 Memrise</a>
         </Alert>
-        {/* <Image
-          src={require("../images/tortilla-cropped.jpg").default}
-          fluid={true}
-          rounded
-        />
-        <p>
-          <i>Tortilla de Patatas I cooked recently. </i>
-        </p> */}
         <p>
           Learning languages is fun, especially when you learn the funny sayings
           and insults of another culture! Here I share{" "}
