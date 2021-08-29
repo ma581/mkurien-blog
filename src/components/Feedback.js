@@ -82,7 +82,7 @@ export default function Feedback(props) {
           placeholder="What should I know?"
         ></Textarea>
 
-        <div className="">
+        <div className="fill-space">
           <Input
             id="feedback-email"
             name="email"
@@ -97,7 +97,7 @@ export default function Feedback(props) {
             type="text"
           />
         </div>
-        <div className="flex justify-end">
+        <div className="justify-end">
           <Button disabled={serverState.submitting || !message} type="submit">
             Send feedback
           </Button>
