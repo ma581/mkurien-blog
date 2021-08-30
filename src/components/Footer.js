@@ -3,7 +3,10 @@ import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
 const LIKES_URL =
-  "https://dwls26wexj.execute-api.us-east-2.amazonaws.com/staging/getLikes-staging";
+  "https://dwls26wexj.execute-api.us-east-2.amazonaws.com/staging/articles";
+
+const INCREMENT_LIKES_URL =
+  "https://dwls26wexj.execute-api.us-east-2.amazonaws.com/staging/incrementLikesForArticle";
 
 export function Footer(props) {
   return (
@@ -40,7 +43,17 @@ function Like(props) {
         console.error(err);
       });
   }, []);
+
+  function incrementLikes(articleId) {
+    fetch(`${INCREMENT_LIKES_URL}?articleId=${props.articleId}`, {
+      method: "POST",
+      headers: {
+        "x-api-key": process.env.REACT_APP_API_KEY,
+      },
+    });
+  }
   function handleClick() {
+    incrementLikes(props.articleId);
     setLikes(likes + 1);
   }
   return (
