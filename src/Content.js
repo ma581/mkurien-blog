@@ -42,48 +42,25 @@ export function Article(props) {
 }
 
 function today() {
-  return `${new Date().getMonthNameShort()} ${new Date().getDate()}, ${new Date().getFullYear()}`;
+  const todayDate = new Date();
+  return `${getMonthNameShort(
+    todayDate
+  )} ${new Date().getDate()}, ${new Date().getFullYear()}`;
 }
 
-Date.prototype.getMonthName = function (lang) {
-  lang = lang && lang in Date.locale ? lang : "en";
-  return Date.locale[lang].month_names[this.getMonth()];
-};
+const getMonthNameShort = (date) => monthShortNames[date.getMonth()];
 
-Date.prototype.getMonthNameShort = function (lang) {
-  lang = lang && lang in Date.locale ? lang : "en";
-  return Date.locale[lang].month_names_short[this.getMonth()];
-};
-
-Date.locale = {
-  en: {
-    month_names: [
-      "January",
-      "February",
-      "March",
-      "April",
-      "May",
-      "June",
-      "July",
-      "August",
-      "September",
-      "October",
-      "November",
-      "December",
-    ],
-    month_names_short: [
-      "Jan",
-      "Feb",
-      "Mar",
-      "Apr",
-      "May",
-      "Jun",
-      "Jul",
-      "Aug",
-      "Sep",
-      "Oct",
-      "Nov",
-      "Dec",
-    ],
-  },
-};
+const monthShortNames = [
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec",
+];

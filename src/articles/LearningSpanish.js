@@ -1,5 +1,5 @@
 import { Page, Article } from "../Content.js";
-import { Popover, OverlayTrigger, Button, Alert, Card } from "react-bootstrap";
+import { Alert } from "react-bootstrap";
 
 export const NUDGE_BOOK_LINK =
   "https://www.amazon.co.uk/Nudge-Improving-Decisions-Health-Happiness/dp/0141040017/ref=sr_1_1?dchild=1&keywords=nudge&qid=1628957465&sr=8-1";
@@ -7,6 +7,8 @@ export const HABIT_BOOK_LINK =
   "https://www.amazon.com/Power-Habit-What-Life-Business/dp/081298160X";
 
 export function LearningSpanishPage() {
+  const articleId = 1;
+
   return (
     <Page>
       <Article heading={"Learning Spanish in my free time"}>
