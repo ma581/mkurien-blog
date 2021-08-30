@@ -34,11 +34,12 @@ export function InsultRoulette() {
     title: "Have a spin!",
     description: "And learn a mild insult today.",
   });
+
   const handleSpinClick = () => {
     const newPrizeNumber = Math.floor(Math.random() * data.length);
     setPrizeNumber(newPrizeNumber);
     setMustSpin(true);
-    setInsult({ title: "...", description: "" });
+    setInsult({ title: "", description: "Reading your insult..." });
   };
 
   return (
@@ -54,7 +55,7 @@ export function InsultRoulette() {
           }}
         />
       </div>
-      <div>
+      <div className="grow">
         <h4>{insult.title}</h4>
         <p>{insult.description}</p>
       </div>

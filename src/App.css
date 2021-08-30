@@ -63,9 +63,20 @@ img {
   justify-content: center;
 }
 
+.fill-space-2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .hover-hand:hover {
   cursor: pointer;
 }
+
+.grow {
+  flex-grow: 4;
+  text-align: center;
+}
+
 .swipe button:hover {
   color: #313133;
   transform: translateY(-6px);

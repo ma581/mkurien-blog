@@ -82,7 +82,7 @@ export default function Feedback(props) {
           placeholder="What should I know?"
         ></Textarea>
 
-        <div className="fill-space">
+        <div className="fill-space-2">
           <Input
             id="feedback-email"
             name="email"
