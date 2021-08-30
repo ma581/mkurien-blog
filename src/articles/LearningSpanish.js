@@ -11,7 +11,10 @@ export function LearningSpanishPage() {
 
   return (
     <Page>
-      <Article heading={"Learning Spanish in my free time"}>
+      <Article
+        heading={"Learning Spanish in my free time"}
+        articleId={articleId}
+      >
         <Alert variant="secondary">
           TLDR; I changed the default language on my phone to Spanish and I
           formed a habit of practicing with spaced-repetition for 15mins

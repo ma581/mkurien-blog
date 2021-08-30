@@ -35,7 +35,7 @@ export function Article(props) {
         <Feedback />
       </Row>
       <Row>
-        <Footer title={props.heading} />
+        <Footer {...props} />
       </Row>
     </>
   );

@@ -2,9 +2,13 @@ import { Page, Article } from "../Content.js";
 import { Alert } from "react-bootstrap";
 
 export function SpanishSlangPage() {
+  const articleId = 2;
   return (
     <Page>
-      <Article heading={"Sound like a native - Spanish slang"}>
+      <Article
+        heading={"Sound like a native - Spanish slang"}
+        articleId={articleId}
+      >
         <p>
           Native speakers use informal words and phrases <i>all the time</i>. So
           here are some phrases I learnt while spending time with my partner's
