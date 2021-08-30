@@ -1,5 +1,6 @@
 import { Page, Article } from "../Content.js";
 import { Alert } from "react-bootstrap";
+import { InsultRoulette } from "../components/InsultRoulette.js";
 
 export function SpanishSlangPage() {
   const articleId = 2;
@@ -99,23 +100,7 @@ export function SpanishSlangPage() {
           shows extra class if you can use the milder ones. Here's a choice
           platter of mild insults.{" "}
         </p>
-        <p>
-          <b>Panoli</b> = Idiot.{" "}
-        </p>
-        <p>
-          <b>Golfo</b> = Shameless.{" "}
-        </p>
-        <p>
-          <b>Pringi/Pringado</b> = Idiot.{" "}
-        </p>
-        <p>
-          <b>Me cago en el mar (I'm crapping in the sea) </b> = An expression
-          equivalent of saying <i>s**t!</i>. Often shortened to just{" "}
-          <i>Cago en.</i>{" "}
-        </p>
-        <p>
-          <b>Maldita Sea</b> = Darn it.{" "}
-        </p>
+        <InsultRoulette />
 
         <h2 id="sayings">Fun sayings</h2>
         <p>

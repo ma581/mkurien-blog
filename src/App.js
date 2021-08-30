@@ -38,9 +38,9 @@ function About() {
     <Page heading="About">
       <p>Hi, I'm Manoj.</p>
       <p>
-        This blog takes a lot of inspiration from{" "}
-        <a href="https://brianlovin.com/">brianlovin.com</a>. You can checkout
-        all my code on my <a href="https://github.com/ma581">Github</a>.
+        I'm an engineer and I love learning and problem solving. Here, I share
+        some things I've enjoyed learning. This blog takes a lot of inspiration
+        from <a href="https://brianlovin.com/">brianlovin.com</a>.
       </p>
       <p>
         🐦 You can also follow me on{" "}

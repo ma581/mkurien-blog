@@ -59,8 +59,13 @@ img {
 .fill-space {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
+.hover-hand:hover {
+  cursor: pointer;
+}
 .swipe button:hover {
   color: #313133;
   transform: translateY(-6px);
