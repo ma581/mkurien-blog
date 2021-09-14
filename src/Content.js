@@ -27,6 +27,7 @@ export function Article(props) {
     <>
       <Row>
         <h1>{props.heading}</h1>
+        <h4>{props.subheading}</h4>
         <h5 className="light">{props.date ? props.date : today()}</h5>
         <br />
         <div>{props.children}</div>

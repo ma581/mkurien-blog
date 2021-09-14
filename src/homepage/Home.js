@@ -17,6 +17,20 @@ export function Home() {
           <Card style={{ width: "18rem" }}>
             <Card.Body>
               <Card.Title>
+                <a href="/sailinglicence" className="card-link">
+                  From zero to skippering sailing boats
+                </a>
+              </Card.Title>
+              <Card.Text>
+                Everything you need to be able to become a licenced skipper free
+                to rent boats anywhere in the world!
+              </Card.Text>
+            </Card.Body>
+          </Card>
+          <br />
+          <Card style={{ width: "18rem" }}>
+            <Card.Body>
+              <Card.Title>
                 <a href="/learningspanish" className="card-link">
                   Learning Spanish in my free time
                 </a>

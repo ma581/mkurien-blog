@@ -6,6 +6,7 @@ import { Home } from "./homepage/Home";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { SpanishSlangPage } from "./articles/SpanishSlang";
+import { SailingLicence } from "./articles/SailingLicence";
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
       <Router className="body">
         <div>
           <Switch>
+            <Route path="/sailinglicence">
+              <SailingLicence />
+            </Route>
             <Route path="/spanishslang">
               <SpanishSlangPage />
             </Route>

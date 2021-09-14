@@ -108,6 +108,14 @@ export function SpanishSlangPage() {
           you can guess which ones are from La Abuela/grandma).{" "}
         </p>
         <p>
+          <b>🤪 Cada loca, su tema</b> = Every crazy person has their theme.{" "}
+        </p>
+        <p>
+          <b>🐞 Bicho malo, nunca muere</b> = Bad creepy crawlers never die.
+          Undesirable people never leave. E.g. you have a bad boss and they
+          never leave the company.{" "}
+        </p>
+        <p>
           <b>🐱 El Gato escaldado, del agua fria huye</b> = The burnt cat runs
           away from cold water. Meaning: Once burnt, twice shy.{" "}
         </p>
