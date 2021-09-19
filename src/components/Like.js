@@ -28,7 +28,7 @@ function useLikes(articleId) {
     })
       .then((response) => response.json())
       .then((res) => {
-        setLikes(res.likes);
+        setLikes(res);
       })
       .catch((err) => {
         console.error(err);
