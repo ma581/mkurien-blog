@@ -38,7 +38,6 @@ export function SailingLicence() {
           everything you need to be able to become a licenced skipper and rent
           boats anywhere in the world!
         </p>
-
         <h2 id="licence">Get the RYA Day Skipper licence</h2>
         <p>
           The Day Skipper licence permits you to skipper a small yacht by day
@@ -81,7 +80,6 @@ export function SailingLicence() {
           membership). You end up getting a shiny certificate that's much more
           impressive than the Day Skipper licence itself.
         </p>
-
         <h2 href="#radio">Get a radio licence</h2>
         <p>
           When sailing, at least one person on-board should be have a radio
@@ -89,29 +87,28 @@ export function SailingLicence() {
           <a href={RADIO_LICENCE_WEBSITE}>1 day course </a>
           with the test on the following day.
         </p>
-
         <h2 href="#insurance">Buy insurance!</h2>
         <p>
           I highly recommend this to avoid having (unexpectedly) expensive
           holidays when you rent a yacht. There are many kinds of insurance but
           the two that you need to cover the basics are:
-          <ul>
-            <li>
-              <b>Charter deposit</b> - if the yacht is damaged during the
-              sailing trip, the charter company can keep the deposit you paid to
-              rent the boat. This insurance guarantees that you don't lose this
-              deposit if that should happen.
-            </li>
-            <li>
-              <b>Skiller Liability</b> - this provides supplementary cover, in
-              the case that the charter deposit is insufficient to cover any
-              incidents - eg colliding with another yacht etc.
-            </li>
-          </ul>
-          Here's a <a href={INSURANCE_WEBSITE}>link</a> to the insurance company
-          I last used - they were great and handled my claim with ease (saving
-          me about £1000 for scratching our yacht during parking)
         </p>
+        <ul>
+          <li>
+            <b>Charter deposit</b> - if the yacht is damaged during the sailing
+            trip, the charter company can keep the deposit you paid to rent the
+            boat. This insurance guarantees that you don't lose this deposit if
+            that should happen.
+          </li>
+          <li>
+            <b>Skiller Liability</b> - this provides supplementary cover, in the
+            case that the charter deposit is insufficient to cover any incidents
+            - eg colliding with another yacht etc.
+          </li>
+        </ul>
+        Here's a <a href={INSURANCE_WEBSITE}>link</a> to the insurance company I
+        last used - they were great and handled my claim with ease (saving me
+        about £1000 for scratching our yacht during parking)
       </Article>
     </Page>
   );

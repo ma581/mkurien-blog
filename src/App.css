@@ -116,3 +116,7 @@ a:hover {
 .swipe:focus {
   background-color: #e74c3c;
 }
+
+.brand {
+  width: 15pt;
+}

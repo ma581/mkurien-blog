@@ -46,6 +46,16 @@ function About() {
         some things I've enjoyed learning. This blog takes a lot of inspiration
         from <a href="https://brianlovin.com/">brianlovin.com</a>.
       </p>
+      <div>
+        Icons made by{" "}
+        <a href="https://www.freepik.com" title="Freepik">
+          Freepik
+        </a>{" "}
+        from{" "}
+        <a href="https://www.flaticon.com/" title="Flaticon">
+          www.flaticon.com
+        </a>
+      </div>
       <p>
         🐦 You can also follow me on{" "}
         <a href="https://twitter.com/mshokk">Twitter</a>.
