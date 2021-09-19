@@ -18,12 +18,12 @@ export function Home() {
             <Card.Body>
               <Card.Title>
                 <a href="/sailinglicence" className="card-link">
-                  From zero to skippering sailing boats
+                  ⛵ From zero to skipper
                 </a>
               </Card.Title>
               <Card.Text>
-                Everything you need to be able to become a licenced skipper free
-                to rent boats anywhere in the world!
+                Everything you need to become a licenced skipper - get ready to
+                rent boats and sail the high seas!
               </Card.Text>
             </Card.Body>
           </Card>
@@ -32,7 +32,7 @@ export function Home() {
             <Card.Body>
               <Card.Title>
                 <a href="/learningspanish" className="card-link">
-                  Learning Spanish in my free time
+                  🇪🇸 Learning Spanish in my free time
                 </a>
               </Card.Title>
               <Card.Text>
@@ -51,13 +51,12 @@ export function Home() {
             <Card.Body>
               <Card.Title>
                 <a href="/spanishslang" className="card-link">
-                  Sound like a native
+                  🥸 Sound like a native
                 </a>
               </Card.Title>
-              <Card.Subtitle>Spanish Slang</Card.Subtitle>
               <Card.Text>
-                Here are some phrases, slang and mild insults you'd only learn
-                if you spend time with native speakers.
+                Here are some Spanish phrases, slang and mild insults you'd only
+                learn if you spend time with native speakers.
               </Card.Text>
             </Card.Body>
           </Card>
@@ -69,10 +68,8 @@ export function Home() {
               <Card.Title>
                 <a>Learning Dutch in the streets</a>
               </Card.Title>
-              <Card.Subtitle>Coming soon!</Card.Subtitle>
               <Card.Text>
-                La peque on how she learnt Dutch. Checkout the Podcast (coming
-                soon!)
+                Ainhoa on how she learnt Dutch. Podcast in the making...
               </Card.Text>
             </Card.Body>
           </Card>
@@ -82,7 +79,6 @@ export function Home() {
               <Card.Title>
                 <a>French in Paris</a>
               </Card.Title>
-              <Card.Subtitle>Coming soon!</Card.Subtitle>
               <Card.Text>Rene's tips on how he learnt French.</Card.Text>
             </Card.Body>
           </Card>

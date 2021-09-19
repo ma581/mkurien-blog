@@ -19,11 +19,7 @@ Like.propTypes = {
 };
 
 function useLikes(articleId) {
-  const LIKES_URL =
-    "https://dwls26wexj.execute-api.us-east-2.amazonaws.com/staging/articles";
-
-  const INCREMENT_LIKES_URL =
-    "https://dwls26wexj.execute-api.us-east-2.amazonaws.com/staging/incrementLikesForArticle";
+  const LIKES_URL = "https://api.mkurien.com/likes";
 
   const [likes, setLikes] = useState(0);
   useEffect(() => {
@@ -45,7 +41,7 @@ function useLikes(articleId) {
   function incrementLikes(articleId) {
     setLikes(likes + 1);
 
-    fetch(`${INCREMENT_LIKES_URL}?articleId=${articleId}`, {
+    fetch(`${LIKES_URL}?articleId=${articleId}`, {
       method: "POST",
       headers: {
         "x-api-key": process.env.REACT_APP_API_KEY,
