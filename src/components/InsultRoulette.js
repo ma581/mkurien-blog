@@ -39,7 +39,7 @@ export function InsultRoulette() {
     const newPrizeNumber = Math.floor(Math.random() * data.length);
     setPrizeNumber(newPrizeNumber);
     setMustSpin(true);
-    setInsult({ title: "", description: "Reading your insult..." });
+    setInsult({ title: "", description: "Preparing your insult..." });
   };
 
   return (
