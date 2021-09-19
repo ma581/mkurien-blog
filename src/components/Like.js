@@ -25,9 +25,6 @@ function useLikes(articleId) {
   useEffect(() => {
     fetch(`${LIKES_URL}?articleId=${articleId}`, {
       method: "GET",
-      headers: {
-        "x-api-key": process.env.REACT_APP_API_KEY,
-      },
     })
       .then((response) => response.json())
       .then((res) => {
@@ -43,9 +40,6 @@ function useLikes(articleId) {
 
     fetch(`${LIKES_URL}?articleId=${articleId}`, {
       method: "POST",
-      headers: {
-        "x-api-key": process.env.REACT_APP_API_KEY,
-      },
     });
   }
 
