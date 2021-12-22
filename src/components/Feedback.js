@@ -60,7 +60,7 @@ export default function Feedback(props) {
   return (
     <div style={{ backgroundColor: "#ecf0f1" }}>
       <br />
-      <h5>A small favour</h5>
+      <h5>Feedback</h5>
       <p className="text-tertiary">
         Was anything I wrote confusing or incorrect? Please let me know! Just
         write a few words below and I’ll be sure to fix it.
