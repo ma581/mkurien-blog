@@ -7,6 +7,7 @@ import { Home } from "./homepage/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { SpanishSlangPage } from "./articles/SpanishSlang";
 import { SailingLicence } from "./articles/SailingLicence";
+export const API_URL = "https://api.mkurien.com";
 
 function App() {
   return (

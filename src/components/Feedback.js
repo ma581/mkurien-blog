@@ -1,10 +1,10 @@
 import * as React from "react";
 import { Input, Textarea } from "./Input";
 import { Button, Alert } from "react-bootstrap";
-const FEEDBACK_URL = "https://asfa.io/xqkeqvkq";
+import { API_URL } from "../App";
 
 export default function Feedback(props) {
-  const [message, setMessage] = React.useState("");
+  const [feedback, setFeedback] = React.useState("");
 
   const [serverState, setServerState] = React.useState({
     submitting: false,
@@ -13,19 +13,26 @@ export default function Feedback(props) {
   });
 
   function onChange(e) {
-    setMessage(e.target.value);
+    setFeedback(e.target.value);
   }
 
   function handleSubmit(e) {
     e.preventDefault();
     const form = e.target;
     setServerState({ submitting: true, submitted: false, error: false });
+    const data = new FormData(e.target);
+    const value = Object.fromEntries(data.entries());
 
-    fetch(FEEDBACK_URL, {
-      method: "POST",
-      body: new FormData(form),
+    fetch(`${API_URL}/feedback?articleId=${props.articleId}`, {
+      method: "PUT",
+      body: JSON.stringify({
+        feedback: value.feedback,
+        email: value.email,
+        twitterHandle: value.twitter,
+      }),
       headers: {
         Accept: "application/json",
+        "Content-Type": "application/json",
       },
     })
       .then((response) => {
@@ -36,7 +43,7 @@ export default function Feedback(props) {
             error: false,
           });
           form.reset();
-          setMessage("");
+          setFeedback("");
         } else {
           response.json().then((data) => {
             setServerState({
@@ -76,9 +83,9 @@ export default function Feedback(props) {
         />
         <Textarea
           onChange={onChange}
-          value={message}
-          id="message"
-          name="message"
+          value={feedback}
+          id="feedback"
+          name="feedback"
           placeholder="What should I know?"
         ></Textarea>
 
@@ -98,7 +105,7 @@ export default function Feedback(props) {
           />
         </div>
         <div className="justify-end">
-          <Button disabled={serverState.submitting || !message} type="submit">
+          <Button disabled={serverState.submitting || !feedback} type="submit">
             Send feedback
           </Button>
         </div>
@@ -112,3 +119,8 @@ export default function Feedback(props) {
     </div>
   );
 }
+
+// curl -v -X POST \
+//   'endpoint' \
+//   -H 'content-type: application/json' \
+//   -d '{ "feedback": "evening" }'

@@ -33,7 +33,7 @@ export function Article(props) {
         <div>{props.children}</div>
       </Row>
       <Row>
-        <Feedback />
+        <Feedback {...props} />
       </Row>
       <Row>
         <Footer {...props} />

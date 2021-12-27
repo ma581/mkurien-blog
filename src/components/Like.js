@@ -1,6 +1,7 @@
 import { Button } from "react-bootstrap";
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
+import { API_URL } from "../App";
 
 export function Like(props) {
   const [likes, incrementLikes] = useLikes(props.articleId);
@@ -19,7 +20,7 @@ Like.propTypes = {
 };
 
 function useLikes(articleId) {
-  const LIKES_URL = "https://api.mkurien.com/likes";
+  const LIKES_URL = `${API_URL}/likes`;
 
   const [likes, setLikes] = useState(0);
   useEffect(() => {
