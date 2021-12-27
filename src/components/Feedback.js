@@ -86,7 +86,8 @@ export default function Feedback(props) {
           value={feedback}
           id="feedback"
           name="feedback"
-          placeholder="What should I know?"
+          placeholder="What should I know? (250 char)"
+          maxlength="250"
         ></Textarea>
 
         <div className="fill-space-2">
@@ -95,6 +96,7 @@ export default function Feedback(props) {
             name="email"
             placeholder="(Optional) Email"
             type="email"
+            maxlength="50"
           />
 
           <Input
@@ -102,6 +104,7 @@ export default function Feedback(props) {
             name="twitter"
             placeholder="(Optional) Twitter handle"
             type="text"
+            maxlength="50"
           />
         </div>
         <div className="justify-end">

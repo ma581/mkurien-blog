@@ -61,6 +61,7 @@ function About() {
         🐦 You can also follow me on{" "}
         <a href="https://twitter.com/mshokk">Twitter</a>.
       </p>
+      <p>v1.0</p>
     </Page>
   );
 }
