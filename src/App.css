@@ -120,3 +120,7 @@ a:hover {
 .brand {
   width: 15pt;
 }
+
+textarea {
+  width: 95%;
+}
